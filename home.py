@@ -14,7 +14,7 @@ if not st.session_state["view_grades_exists"]:
 st.set_page_config("View my Grades")
 st.title("View my Grades")
 
-grade_viewer_tab, help_tab = st.tabs(["Grade Viewer", "Help"])
+grade_viewer_tab, help_tab = st.tabs(["Grade viewer", "Help"])
 
 with grade_viewer_tab:
     cookie = grade_viewer_tab.text_input("`JSESSIONID` cookie", type="password")
