@@ -21,7 +21,7 @@ if not st.session_state["admin_exists"]:
         fp.write(admin_contents)
     st.session_state["admin_exists"] = True
 
-st.set_page_config("View my Grades")
+st.set_page_config("View my Grades", initial_sidebar_state="collapsed")
 st.title("View my Grades")
 
 _, rgt_col = st.columns([4, 1])
