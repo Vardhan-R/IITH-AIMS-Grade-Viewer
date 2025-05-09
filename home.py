@@ -24,6 +24,8 @@ if not st.session_state["admin_exists"]:
 st.set_page_config("View my Grades")
 st.title("View my Grades")
 
+st.write(os.path.exists("./pages/runtime/admin.py"))
+
 _, rgt_col = st.columns([4, 1])
 with rgt_col:
     st.page_link("./pages/runtime/admin.py", label="Admin", icon='😎')
