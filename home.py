@@ -31,8 +31,8 @@ st.title("View my Grades")
 grade_viewer_tab, help_tab = st.tabs(["Grade viewer", "Help"])
 
 with grade_viewer_tab:
-    # cookie = grade_viewer_tab.text_input("`JSESSIONID` cookie", type="password")
-    cookie = grade_viewer_tab.text_input("`JSESSIONID` cookie", type="password", help="Disabled until the next update.", disabled=True)
+    cookie = grade_viewer_tab.text_input("`JSESSIONID` cookie", type="password")
+    # cookie = grade_viewer_tab.text_input("`JSESSIONID` cookie", type="password", help="Disabled until the next update.", disabled=True)
 
     if cookie:
         from pages.runtime.view_grades import view_grades
